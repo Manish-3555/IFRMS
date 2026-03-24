@@ -31,10 +31,10 @@ To design and develop a **complete, working web application** dedicated to manag
 
 **Group:** DBCREW — DBMS Course Project
 
- N. Jatin 
- K.D. Karun Lakshman 
- A.N.S. Thanush Reddy 
- J. Manish Reddy 
+ N. Jatin,
+ K.D. Karun Lakshman, 
+ A.N.S. Thanush Reddy, 
+ J. Manish Reddy,
 
 ---
 
