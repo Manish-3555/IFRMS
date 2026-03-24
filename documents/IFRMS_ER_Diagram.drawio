@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ==================== ENTITIES ==================== -->
+
+    <!-- USER -->
+    <mxCell id="user" value="User" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="720" y="300" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- MEMBER -->
+    <mxCell id="member" value="Member" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="300" y="480" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- TRAINER -->
+    <mxCell id="trainer" value="Trainer" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="720" y="480" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ADMIN -->
+    <mxCell id="admin" value="Admin" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="480" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- FITNESS PROGRAM -->
+    <mxCell id="fitprog" value="Fitness Program" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="100" y="700" width="140" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- WORKOUT PLAN -->
+    <mxCell id="workout" value="Workout Plan" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="540" y="700" width="140" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- PROGRESS -->
+    <mxCell id="progress" value="Progress" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="300" y="900" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- SCHEDULE -->
+    <mxCell id="schedule" value="Schedule" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="800" y="700" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- EQUIPMENT -->
+    <mxCell id="equipment" value="Equipment" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="700" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- REPORT -->
+    <mxCell id="report" value="Report" style="shape=mxgraph.erd.entity;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+      <mxGeometry x="1320" y="700" width="120" height="60" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== GENERALIZATION CIRCLE (ISA) ==================== -->
+    <mxCell id="isa" value="d" style="ellipse;whiteSpace=wrap;html=1;fillColor=#00CC00;strokeColor=#000000;fontStyle=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="772" y="390" width="36" height="36" as="geometry" />
+    </mxCell>
+
+    <!-- ISA lines: User to circle -->
+    <mxCell id="e_user_isa" style="edgeStyle=none;html=1;" edge="1" source="user" target="isa" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <!-- ISA circle to Member -->
+    <mxCell id="e_isa_member" style="edgeStyle=none;html=1;" edge="1" source="isa" target="member" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <!-- ISA circle to Trainer -->
+    <mxCell id="e_isa_trainer" style="edgeStyle=none;html=1;" edge="1" source="isa" target="trainer" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <!-- ISA circle to Admin -->
+    <mxCell id="e_isa_admin" style="edgeStyle=none;html=1;" edge="1" source="isa" target="admin" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== USER ATTRIBUTES ==================== -->
+    <mxCell id="a_user_id" value="User_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="580" y="200" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_uid" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_user_name" value="Name" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="690" y="170" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_name" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_name" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_user_email" value="Email" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="790" y="170" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_email" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_email" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_user_phone" value="Phone" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="880" y="200" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_phone" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_phone" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_user_pass" value="Password" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="960" y="240" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_pass" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_pass" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_user_dob" value="DOB" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="960" y="300" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_user_dob" style="edgeStyle=none;html=1;" edge="1" source="user" target="a_user_dob" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== MEMBER ATTRIBUTES ==================== -->
+    <mxCell id="a_mem_id" value="Member_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="140" y="420" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_mem_id" style="edgeStyle=none;html=1;" edge="1" source="member" target="a_mem_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_mem_date" value="Membership Date" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="140" y="480" width="130" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_mem_date" style="edgeStyle=none;html=1;" edge="1" source="member" target="a_mem_date" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== TRAINER ATTRIBUTES ==================== -->
+    <mxCell id="a_tr_id" value="Trainer_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="600" y="420" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_tr_id" style="edgeStyle=none;html=1;" edge="1" source="trainer" target="a_tr_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_tr_spec" value="Specialization" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="590" y="480" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_tr_spec" style="edgeStyle=none;html=1;" edge="1" source="trainer" target="a_tr_spec" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== FITNESS PROGRAM ATTRIBUTES ==================== -->
+    <mxCell id="a_fp_id" value="Program_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="20" y="640" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fp_id" style="edgeStyle=none;html=1;" edge="1" source="fitprog" target="a_fp_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_fp_name" value="Program Name" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="20" y="700" width="110" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fp_name" style="edgeStyle=none;html=1;" edge="1" source="fitprog" target="a_fp_name" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_fp_cap" value="Capacity" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="20" y="760" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_fp_cap" style="edgeStyle=none;html=1;" edge="1" source="fitprog" target="a_fp_cap" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== WORKOUT PLAN ATTRIBUTES ==================== -->
+    <mxCell id="a_wp_id" value="Plan_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="470" y="640" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_wp_id" style="edgeStyle=none;html=1;" edge="1" source="workout" target="a_wp_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_wp_desc" value="Description" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="470" y="700" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_wp_desc" style="edgeStyle=none;html=1;" edge="1" source="workout" target="a_wp_desc" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== PROGRESS ATTRIBUTES ==================== -->
+    <mxCell id="a_pr_id" value="Progress_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="180" y="870" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_pr_id" style="edgeStyle=none;html=1;" edge="1" source="progress" target="a_pr_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_pr_weight" value="Weight" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="200" y="960" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_pr_weight" style="edgeStyle=none;html=1;" edge="1" source="progress" target="a_pr_weight" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_pr_reps" value="Reps" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="300" y="980" width="80" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_pr_reps" style="edgeStyle=none;html=1;" edge="1" source="progress" target="a_pr_reps" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_pr_time" value="Workout Time" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="390" y="960" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_pr_time" style="edgeStyle=none;html=1;" edge="1" source="progress" target="a_pr_time" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== SCHEDULE ATTRIBUTES ==================== -->
+    <mxCell id="a_sc_id" value="Schedule_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="790" y="640" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_sc_id" style="edgeStyle=none;html=1;" edge="1" source="schedule" target="a_sc_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_sc_date" value="Session Date" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="900" y="640" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_sc_date" style="edgeStyle=none;html=1;" edge="1" source="schedule" target="a_sc_date" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_sc_time" value="Session Time" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="920" y="700" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_sc_time" style="edgeStyle=none;html=1;" edge="1" source="schedule" target="a_sc_time" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== EQUIPMENT ATTRIBUTES ==================== -->
+    <mxCell id="a_eq_id" value="Equipment_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="1050" y="640" width="110" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_eq_id" style="edgeStyle=none;html=1;" edge="1" source="equipment" target="a_eq_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_eq_name" value="Equip Name" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1080" y="780" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_eq_name" style="edgeStyle=none;html=1;" edge="1" source="equipment" target="a_eq_name" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_eq_status" value="Status" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1190" y="780" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_eq_status" style="edgeStyle=none;html=1;" edge="1" source="equipment" target="a_eq_status" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== REPORT ATTRIBUTES ==================== -->
+    <mxCell id="a_rp_id" value="Report_ID" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;fontStyle=4;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="640" width="90" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_rp_id" style="edgeStyle=none;html=1;" edge="1" source="report" target="a_rp_id" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_rp_type" value="Report Type" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1400" y="640" width="100" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_rp_type" style="edgeStyle=none;html=1;" edge="1" source="report" target="a_rp_type" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a_rp_date" value="Generated Date" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1400" y="700" width="120" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="e_rp_date" style="edgeStyle=none;html=1;" edge="1" source="report" target="a_rp_date" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- ==================== RELATIONSHIPS ==================== -->
+
+    <!-- MEMBER Enrolls In FITNESS PROGRAM -->
+    <mxCell id="r_enrolls" value="Enrolls In" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="200" y="598" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_mem_enroll" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="member" target="r_enrolls" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_mem_enroll" value="M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_mem_enroll">
+      <mxGeometry x="-0.7" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_enroll_fp" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_enrolls" target="fitprog" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_enroll_fp" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_enroll_fp">
+      <mxGeometry x="0.7" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- TRAINER Creates WORKOUT PLAN -->
+    <mxCell id="r_creates" value="Creates" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="630" y="598" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_tr_creates" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="trainer" target="r_creates" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_tr_creates" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_tr_creates">
+      <mxGeometry x="-0.7" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_creates_wp" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_creates" target="workout" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_creates_wp" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_creates_wp">
+      <mxGeometry x="0.7" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- TRAINER Assigns WORKOUT PLAN to MEMBER -->
+    <mxCell id="r_assigns" value="Assigned To" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="390" y="780" width="130" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_wp_assigns" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="workout" target="r_assigns" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_wp_assigns" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_wp_assigns">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_assigns_mem" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_assigns" target="member" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_assigns_mem" value="M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_assigns_mem">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- TRAINER Tracks PROGRESS of MEMBER -->
+    <mxCell id="r_tracks" value="Tracks" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="490" y="870" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_tr_tracks" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="trainer" target="r_tracks" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_tr_tracks" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_tr_tracks">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_tracks_pr" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_tracks" target="progress" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_tracks_pr" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_tracks_pr">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_pr_mem" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_tracks" target="member" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_pr_mem" value="M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_pr_mem">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- TRAINER Schedules SESSION -->
+    <mxCell id="r_schedules" value="Schedules" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="750" y="598" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_tr_sched" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="trainer" target="r_schedules" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_tr_sched" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_tr_sched">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_sched_sc" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_schedules" target="schedule" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_sched_sc" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_sched_sc">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- MEMBER Attends SCHEDULE -->
+    <mxCell id="r_attends" value="Attends" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="490" y="770" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_mem_attends" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="member" target="r_attends" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_mem_attends" value="M" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_mem_attends">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_attends_sc" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_attends" target="schedule" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_attends_sc" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_attends_sc">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- ADMIN Manages EQUIPMENT -->
+    <mxCell id="r_manages_eq" value="Manages" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1100" y="598" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_admin_mgeq" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="admin" target="r_manages_eq" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_admin_mgeq" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_admin_mgeq">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_mgeq_eq" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_manages_eq" target="equipment" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_mgeq_eq" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_mgeq_eq">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+    <!-- ADMIN Generates REPORT -->
+    <mxCell id="r_generates" value="Generates" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#000000;fontSize=12;fillColor=#ffffff;" vertex="1" parent="1">
+      <mxGeometry x="1290" y="598" width="120" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="e_admin_gen" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="admin" target="r_generates" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_admin_gen" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_admin_gen">
+      <mxGeometry x="-0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+    <mxCell id="e_gen_rp" style="edgeStyle=none;html=1;endArrow=none;" edge="1" source="r_generates" target="report" parent="1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="l_gen_rp" value="N" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e_gen_rp">
+      <mxGeometry x="0.5" relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+    </mxCell>
+
+  </root>
+</mxGraphModel>
