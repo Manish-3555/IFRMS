@@ -31,8 +31,8 @@ To design and develop a **complete, working web application** dedicated to manag
 
 **Group:** DBCREW — DBMS Course Project
 
- N. Jatin,
  K.D. Karun Lakshman, 
+ N. Jatin,
  A.N.S. Thanush Reddy, 
  J. Manish Reddy,
 
@@ -80,8 +80,9 @@ IFRMS/
 │   ├── SRS.pdf                  # Software Requirements Specification
 │   ├── SDD.docx                 # System Design Document
 │   └── ER_Diagram.drawio        # Chen's ER Diagram
-├── frontend/                    # Next.js app
-├── backend/                     # Node.js + Express API
+├── ifrmsweb/
+    ├── frontend/                    # Next.js app
+    └── backend/                     # Node.js + Express API
 └── database/
     └── schema.sql               # PostgreSQL schema
 ```
@@ -103,13 +104,13 @@ All project documentation is available in the [`docs/`](./docs) folder:
 - [x] SRS Documentation
 - [x] System Design Document
 - [x] ER Diagram
-- [ ] Database schema (PostgreSQL)
-- [ ] Backend REST API
-- [ ] Frontend UI
-- [ ] Member registration & login
-- [ ] Trainer & admin dashboards
-- [ ] Equipment management module
-- [ ] Progress tracking module
+- [x] Database schema (PostgreSQL)
+- [x] Backend REST API
+- [x] Frontend UI
+- [x] Member registration & login
+- [x] Trainer & admin dashboards
+- [x] Equipment management module
+- [x] Progress tracking module
 - [ ] Report generation
 - [ ] **Online payment for membership renewal** *(planned for v2.0)*
  
@@ -126,7 +127,7 @@ All project documentation is available in the [`docs/`](./docs) folder:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/IFRMS.git
+   git clone  https://github.com/Karunlk/IFRMS
    cd IFRMS
    ```
 
@@ -134,10 +135,11 @@ All project documentation is available in the [`docs/`](./docs) folder:
    ```bash
    psql -U postgres -f database/schema.sql
    ```
+   also read the read me file for other .sql files
 
 3. **Configure environment variables**
 
-   Create a `.env` file in the `backend/` directory:
+  Update  `.env` file in the `ifrmsweb/` directory:
    ```
    DB_HOST=localhost
    DB_PORT=5432
@@ -148,21 +150,13 @@ All project documentation is available in the [`docs/`](./docs) folder:
    PORT=5000
    ```
 
-4. **Install and run the backend**
+4. **Install and run the website**
    ```bash
-   cd backend
+   cd ifrmsweb
    npm install
    npm run dev
    ```
-
-5. **Install and run the frontend**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-
-6. Open your browser at `http://localhost:3000`
+5. Open your browser at `http://localhost:3000`
 
 ---
 
