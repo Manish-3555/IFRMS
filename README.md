@@ -1,14 +1,14 @@
-# 🏋️ IFRMS — Integrated Fitness & Resource Management System
+#  IFRMS — Integrated Fitness & Resource Management System
 
 > A web application to manage gym memberships, resources, staff, and fitness tracking — built as a DBMS course project.
 
 ---
 
-## 📖 About the Project
+##  About the Project
 
 This project was developed as a **team project for the DBMS (CS2011E) course** at the **National Institute of Technology Calicut (NITC)**, under the guidance of **Dr. A. Sudarshan Chakravarthy**.
 
-### 💡 The Inspiration
+### The Inspiration
 
 The idea came from a real problem faced by some of our gym-going friends — including one of our own team members. At our college gym, members are required to **physically visit the gym every month just to renew their membership**, and all money transactions are recorded manually in a notebook. There's no digital record, no convenience, and no accountability.
 
@@ -18,7 +18,7 @@ We decided to take on this problem as our DBMS project and build a dedicated web
 
 ---
 
-## 🎯 Aim
+##  Aim
 
 To design and develop a **complete, working web application** dedicated to managing:
 - Gym resources (equipment, scheduling)
@@ -27,7 +27,7 @@ To design and develop a **complete, working web application** dedicated to manag
 
 ---
 
-## 👥 Team
+##  Team
 
 **Group:** DBCREW — DBMS Course Project
 
@@ -38,7 +38,7 @@ To design and develop a **complete, working web application** dedicated to manag
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -50,7 +50,7 @@ To design and develop a **complete, working web application** dedicated to manag
 
 ---
 
-## ✨ Features
+##  Features
 
 ### Member
 - Register and log in securely
@@ -71,7 +71,7 @@ To design and develop a **complete, working web application** dedicated to manag
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 IFRMS/
@@ -81,25 +81,27 @@ IFRMS/
 │   ├── SDD.docx                 # System Design Document
 │   └── ER_Diagram.drawio        # Chen's ER Diagram
 ├── code_base/
-    ├── frontend/                    # Next.js app
-    └── backend/                     # Node.js + Express API
+│   ├── frontend/                # Next.js app
+│    └── backend/                # Node.js + Express API
 └── database/
-    └── schema.sql               # PostgreSQL schema
+│  └── schema.sql                # PostgreSQL schema
+├── User_manual                  # instructions to use
+└──Implementation and testing    # screenshots of implementation and testing
 ```
 
-## 📄 Documentation
+##  Documentation
 
 All project documentation is available in the [`docs/`](./docs) folder:
 
-- 📋 [Software Requirements Specification (SRS)](./docs/SRS.pdf)
-- 🏗️ [System Design Document (SDD)](./docs/SDD.docx)
-- 🗂️ [ER Diagram (Chen's Notation)](./docs/ER_Diagram.drawio)
+-  [Software Requirements Specification (SRS)](./docs/SRS.pdf)
+-  [System Design Document (SDD)](./docs/SDD.docx)
+-  [ER Diagram (Chen's Notation)](./docs/ER_Diagram.drawio)
 
 ---
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] SRS Documentation
 - [x] System Design Document
@@ -116,7 +118,7 @@ All project documentation is available in the [`docs/`](./docs) folder:
  
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js (v18+)
@@ -139,7 +141,7 @@ All project documentation is available in the [`docs/`](./docs) folder:
 
 3. **Configure environment variables**
 
-  Update  `.env` file in the `ifrmsweb/` directory:
+  Update  `.env` file in the `code_base/` directory:
    ```
    DB_HOST=localhost
    DB_PORT=5432
@@ -160,12 +162,9 @@ All project documentation is available in the [`docs/`](./docs) folder:
 
 ---
 
----
-
 ## 📜 License
 
-This project is developed for academic purposes as part of the DBMS course (CS2011E) at NIT Calicut.
-This is licensed under MIT license.
+This project is developed as part of an academic assignement for DBMS Theory course and licensed under MIT free license
 ---
 
 > *"Built to solve a real problem, one query at a time."* 💪
